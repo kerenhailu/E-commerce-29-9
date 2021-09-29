@@ -1,0 +1,89 @@
+/* ------------------- nav--------------------------- */
+#ulNav {
+  text-align: center;
+  font-size: large;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 3vh;
+  justify-content: space-around;
+}
+#ulNav a {
+  color: rgb(240, 235, 235);
+  transition: 0.5s;
+}
+#ulNav a:hover{
+  color: rgb(233, 143, 25);
+}
+nav {
+  margin: 1%;
+  background: linear-gradient(#0a0a0a, #0a0a0a, #0a0a0a, #f5eeee);
+  height: 13vh;
+}
+nav:hover {
+  background: linear-gradient(#0a0a0a, #0a0a0a, #0a0a0a, #0a0a0a, #f5eeee);
+}
+/* ------------------------- main------------------------------ */
+main {
+  text-align: center;
+  margin: 1%;
+}
+#mainTitle,
+#secondTitle {
+  font-size: 50px;
+  text-shadow: 2px 2px 2px rgb(80, 79, 76);
+}
+#imgDisplay {
+  margin-left: 1%;
+}
+.picProducts {
+  width: 90%;
+  height: 58vh;
+  transition: 0.7s;
+  margin: 2%;
+}
+.picProducts:hover {
+  width: 91%;
+  opacity: 0.9;
+}
+/* ------------------------footer--------------------------------- */
+Footer {
+  background: linear-gradient(#4c4b4b, #4c4b4b, #0a0a0a);
+  font-size: large;
+  color: white;
+}
+#secFooter {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#artThreeOfFooter li a {
+  color: white;
+  transition: 0.5s;
+}
+#artThreeOfFooter li a:hover{
+  color: rgb(218, 178, 127);
+}
+ @media screen and (max-width: 768px) {
+
+#secFooter {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+#artOneOfFooter{
+    width: 23%;
+}     
+}
+ @media screen and (max-width: 426px) {
+  #mainTitle,
+  #secondTitle {
+    font-size: medium;
+  }
+  #artOneOfFooter{
+    display: none;
+}
+}

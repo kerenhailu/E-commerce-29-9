@@ -1,0 +1,120 @@
+/* ------------------------------- nav--------------------------------- */
+#ulNav {
+  text-align: center;
+  font-size: large;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 3vh;
+  justify-content: space-around;
+}
+#ulNav a {
+  transition: 0.5s;
+  color: rgb(243, 239, 239);
+  font-weight: bold;
+}
+#ulNav a:hover {
+  color: rgb(233, 143, 25);
+}
+nav {
+  background: linear-gradient(#0a0a0a, #0a0a0a, #0a0a0a, #0a0a0a, #f5eeee);
+  height: 11vh;
+  transition: 0.5s;
+  margin: 0.3%;
+}
+nav:hover {
+  background: linear-gradient(#0a0a0a, #0a0a0a, #0a0a0a, #f5eeee);
+  opacity: 0.9;
+}
+
+/* ------------------------main--------------------------------- */
+
+h1 {
+  font-size: 80px;
+  text-align: center;
+  text-shadow: 2px 2px 2px rgb(214, 132, 24);
+}
+#tableCard {
+  width: 80%;
+  border-collapse: collapse;
+  margin-left: 10%;
+  margin-bottom: 1%;
+}
+#tableCard,
+th,
+td {
+  text-align: center;
+  border: 1px solid black;
+  background-color: rgb(245, 238, 230);
+}
+#tableCard,
+th {
+  height: 50px;
+}
+#tableCard tr {
+  border: 3px solid black;
+}
+.btnDelet {
+  width: 100%;
+  height: 35px;
+  font-weight: bold;
+  background-color: rgb(230, 206, 174);
+}
+.btnMore {
+  width: 100%;
+  height: 35px;
+  font-weight: bold;
+  background-color: rgb(230, 206, 174);
+}
+#trOfSum {
+  height: 100px;
+}
+span {
+  font-weight: bold;
+  font-size: large;
+}
+#sumInTable {
+  font-weight: bold;
+  font-size: large;
+}
+
+/* ------------------------footer--------------------------------- */
+Footer {
+  background: linear-gradient(#4c4b4b, #4c4b4b, #0a0a0a);
+  font-size: large;
+  color: white;
+}
+#secFooter {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+#artThreeOfFooter li a {
+  color: white;
+}
+#artThreeOfFooter li a:hover {
+  color: rgb(218, 178, 127);
+}
+@media screen and (max-width: 768px) {
+  #secFooter {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  #artOneOfFooter {
+    width: 23%;
+  }
+}
+@media screen and (max-width: 426px) {
+  h1 {
+    font-size: 30px;
+  }
+  #ulNav {
+    font-size: small;
+  }
+  #artOneOfFooter {
+    display: none;
+  }
+}

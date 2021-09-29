@@ -1,0 +1,138 @@
+/* ------------------------------- nav--------------------------------- */
+#ulNav {
+  text-align: center;
+  font-size: large;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 3vh;
+  justify-content: space-around;
+}
+#ulNav a {
+  color: rgb(240, 235, 235);
+  font-weight: bold;
+  transition: 0.5s;
+}
+#ulNav a:hover{
+  color: rgb(233, 143, 25);
+}
+nav {
+  background: linear-gradient(#0a0a0a, #0a0a0a, #0a0a0a, #0a0a0a, #f5eeee);
+  height: 11vh;
+  transition: 0.5s;
+  margin: 0.3%;
+}
+nav:hover {
+  background: linear-gradient(#0a0a0a, #0a0a0a, #0a0a0a, #f5eeee);
+  opacity: 0.9;
+}
+
+/* ------------------------main--------------------------------- */
+
+#h1CentralTitle {
+  font-size: 50px;
+  text-align: center;
+  text-shadow: 2px 2px 2px rgb(80, 79, 76);
+}
+#sectionProducts {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 2%;
+  padding: 2%;
+}
+.artProducts img {
+  width: 200px;
+  height: 180px;
+  transition: opacity 0.5s;
+}
+.artProducts img:hover {
+  opacity: 0.8;
+}
+#NameProducts {
+  font-size: 30px;
+  font-weight: bold;
+}
+#PriceProducts {
+  color: rgb(63, 59, 59);
+}
+.btnProducts {
+  background-color: red;
+  color: blanchedalmond;
+  transition: width 0.9s;
+  width: 45vh;
+  height: 44px;
+}
+.btnProducts:hover {
+  background-color: red;
+  color: blanchedalmond;
+  font-weight: bold;
+  width: 46vh;
+}
+/* ------------------------footer--------------------------------- */
+Footer {
+  background: linear-gradient(#4c4b4b, #4c4b4b, #0a0a0a);
+  font-size: large;
+  color: white;
+}
+#secFooter {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 30%;
+}
+
+#artThreeOfFooter li a {
+  color: white;
+  transition: 0.5s;
+}
+#artThreeOfFooter li a:hover{
+  color: rgb(218, 178, 127);
+}
+
+ @media screen and (max-width: 768px) {
+  #secFooter {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+  }
+  .artProducts {
+    width: 43%;
+  }
+  .artProducts img{
+    width: 42%;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  #ulNav {
+    font-size: medium;
+  }
+  nav{
+    margin-left: 2%;
+  }
+  #h1CentralTitle {
+    font-size: 30px;
+  }
+  #artOneOfFooter {
+    display: none;
+  }
+  #sectionProducts {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 90%;
+  }
+  .artProducts {
+    width:60%;
+  }
+  .artProducts img{
+    width: 45%;
+  }
+   footer{
+    margin-left: 2%;
+  }
+} 
