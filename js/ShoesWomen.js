@@ -17,7 +17,6 @@ for (let i = 0; i < Products.length; i++) {
           } ${Products[j + 45].price}`
         );
         console.log(arrayBuy);
-        console.log("ho ho ho");
       };
     }
   }
